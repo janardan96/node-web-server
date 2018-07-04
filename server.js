@@ -43,6 +43,11 @@ app.get('/about',(req,res)=>{
         currentYear: new Date().getFullYear()
     });
 });
+app.get('/feature',(req,res)=>{
+    res.render("feature.hbs",{
+        currentYear: new Date().getFullYear()
+    });
+});
 
 app.listen(port,()=>{
     console.log(`server is on ${port}`);
